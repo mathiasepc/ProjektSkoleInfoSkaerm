@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pageHeader {
+    align-items: center;
+    height: 45px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.logoName {
+    color: #5a1400;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.topContent {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topContent2 {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topContent3 {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topContent2 button {
+    margin: 5px;
+    height: 55px;
+    width: 70px;
+}
+
+.topContent3 button {
+    margin: 5px;
+    height: 65px;
+    width: 100px;
+}
+
+.leftContent {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center; 
+}
+
+.leftContent img {
+    height: 55vh;
+}
+
+.kort {
+    height: 65vh;
+}
+
+.stats
+{
+    text-align: left;
+    font-size: 25px;
+    color: rgba(212, 6, 40, 0.76);
+}
+
+.rightContent {
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+}
+
+.profilrightContent {
+    flex: 1.2;
+    padding: 30px;
+    text-align: left;
+}
+
+.logoLink {
+    text-decoration: none;
+}
+
+.mainSection {
+    flex: 1;
+    display: flex;
+    overflow: auto; 
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+.mainContent img {
+    max-height: 80vh;
+}
+
+.loginButton {
+    width: 70px;
+    height: 35px;
+    margin-right: 20px; 
+    opacity: 1;
+    background-color: #64becd;
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    justify-content: right;
+} 
+
+.loginButton:focus{
+   background-color: darkblue;
+}
+
+.textBox {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.imageDescription {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    margin: 10px;
+}
+
+.imageDescription img {
+    height: 30vh;
+    display: block;
+}
+
+.imageDescription p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+}
+
+.imageDescription a{
+    text-decoration: none;
+}
+
+.profilmainContent {
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex: 1;
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.profiln {
+    min-width: 55vh;
+    max-width: 55vh;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin: 15px;
+    max-height: 20vh;
+}
+
+.profiln img {
+    margin-left: 30px;
+    max-width: 15vh;
+    max-height: 15vh;
+}
+
+.profiln p { 
+    margin: 16px;
+    margin-left: 30px;
+}
+
+.profilmainContent2 {
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex: 1;
+    padding: 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.profiln2 {
+    margin: 20px;
+    min-width: 55vh;
+    max-width: 55vh;
+    display: flex;
+    max-height: 20vh;
+}
+
+.profiln2 img {
+    margin-left: 30px;
+    max-width: 15vh;
+    max-height: 15vh;
+}
+
+.profiln2 p { 
+    margin: 16px;
+    margin-left: 30px;
+}
+
+
+.active {
+    display: inline;
+    font-weight: bold;
+    color: red;
+}
+
+.profil {
+   align-items: center;
+    max-width: 50vh;
+    max-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.profil img {
+    max-width: 15vh;
+}
+
+.profil p {
+
+
+    text-align: left;
+    margin-top: 21px;
+    color: black;
+}
+
+/*laver placering for knapperne*/
+.ButtonPlaceMent{
+    flex: 1;
+    border: black;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Laver styling for index knapperne*/
+.StyleButton button{
+    background-color: #64becd;
+    border: none;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 200px;
+    height:100px;
+    font-size: 25px;
+}
+
+.StyleButton button:focus {
+	background-color: darkblue;
+}
+
+.backAndForward{
+    background-color: #64becd;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    width: 70px;
+    height:35px;
+}
+
+.backAndForward:focus {
+	background-color: darkblue;
+}
+
+
+
+/*laver indstillinger for admin siden*/
+.AdminPage
+{
+    flex: 1;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Titlen i formen*/
+.AdminTitle
+{
+    color: white;
+    font-size: 35px;
+}
+
+/*laver indstillinger på title til bokse*/
+#Title
+{
+    color: white;
+}
+
+/*indstillinger på feltet E-mail*/
+#AdminBrugernavn
+{
+    width: 300px;
+    height: 30px;
+    background-color: rgba(10, 43, 80, 0.171);
+    border: none;
+}
+
+/*indstillinger på feltet password*/
+#AdminPassword
+{
+    width: 300px;
+    height: 30px;
+    background-color: rgba(10, 43, 80, 0.171);
+    border: none;
+}
+
+/*indstillinger for knappen*/
+.SubmitButton
+{
+    border: none;
+    color: white;
+    background-color: #64becd;
+    margin-left: 15px;
+    width: 270px;
+    height: 25px;
+}
+
+.SubmitButton:focus{
+   background-color: darkblue;
+}
+
+/*indstillinger for titlen på fagsiderne*/
+.ITFagTitle
+{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(163, 13, 38, 0.76);
+}
+
+/*indstillinger for fagsidens venstre siden*/
+.ITFagSite
+{
+   flex: 1;
+   display: flex;  
+   margin-top: 50px;  
+}
+
+/*INdstillinger for venstreside af siden*/
+.LeftSide
+{
+    margin-left: 100px;
+}
+/*indstillinger på billedet*/
+.ImgSupport
+{
+    height: 500px;
+    width: 400px;
+
+}  
+
+/*Indstillinger af højre side*/
+.RightSide
+{
+    margin-left: 50px;
+}
+
+
